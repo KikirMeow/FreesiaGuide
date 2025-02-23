@@ -1,0 +1,8 @@
+[worker]
+    # 和Freesia-Velocity中的分别对齐
+	worker_master_ip = "localhost"
+	worker_master_port = 19200
+	# 控制节点重连间隔时间，单位是秒
+	controller_reconnect_interval = 1
+	# 玩家数据缓存的保持时间，单位是秒
+	player_data_cache_invalidate_interval_seconds = 30

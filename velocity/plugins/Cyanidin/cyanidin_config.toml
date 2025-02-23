@@ -1,0 +1,16 @@
+[functions]
+    # 踢出未安装ysm模组的玩家
+	kick_if_ysm_not_installed = false
+	# 握手超时
+	ysm_detection_timeout_for_kicking = 30000
+[messages]
+    # 语言, 目前有zh_CN和en_US
+	language = "zh_CN"
+[worker]
+    # 主节点控制服务的地址
+	worker_master_ip = "localhost"
+	worker_master_port = 19200
+	# worker服务端的地址（分别对应worker的server.properties中的server-port和server-ip）
+	# 特别注意: 不要把worker和主控制节点的端口暴露于公网，否则会造成安全性问题
+	worker_msession_port = 19199
+	worker_msession_ip = "localhost"
