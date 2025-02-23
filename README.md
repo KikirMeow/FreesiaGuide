@@ -8,15 +8,15 @@ Freesia的食用文档
 详细说明的配置文件如下:
 ~~~toml
 [functions]
-    # 踢出未安装ysm模组的玩家
+        # 踢出未安装ysm模组的玩家
 	kick_if_ysm_not_installed = false
 	# 握手超时
 	ysm_detection_timeout_for_kicking = 30000
 [messages]
-    # 语言, 目前有zh_CN和en_US
+        # 语言, 目前有zh_CN和en_US
 	language = "zh_CN"
 [worker]
-    # 主节点控制服务的地址
+        # 主节点控制服务的地址
 	worker_master_ip = "localhost"
 	worker_master_port = 19200
 	# worker服务端的地址（分别对应worker的server.properties中的server-port和server-ip）
@@ -34,7 +34,7 @@ worker上模组的详细配置文件如下:
 
 ~~~toml
 [worker]
-    # 和Freesia-Velocity中的分别对齐
+        # 和Freesia-Velocity中的分别对齐
 	worker_master_ip = "localhost"
 	worker_master_port = 19200
 	# 控制节点重连间隔时间，单位是秒
